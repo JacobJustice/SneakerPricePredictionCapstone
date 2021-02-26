@@ -4,3 +4,6 @@
 [submodule "StockX-Scraper"]
 	path = StockX-Scraper
 	url = https://github.com/JacobJustice/StockX-Scraper.git
+[submodule "SneakerDataVisualization"]
+	path = SneakerDataVisualization
+	url = https://github.com/JacobJustice/SneakerDataVisualization.git

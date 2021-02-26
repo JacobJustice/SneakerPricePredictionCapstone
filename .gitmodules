@@ -1,0 +1,6 @@
+[submodule "SneakerPricePrediction"]
+	path = SneakerPricePrediction
+	url = https://github.com/JacobJustice/SneakerPricePrediction.git
+[submodule "StockX-Scraper"]
+	path = StockX-Scraper
+	url = https://github.com/JacobJustice/StockX-Scraper.git

@@ -7,3 +7,6 @@
 [submodule "SneakerDataVisualization"]
 	path = SneakerDataVisualization
 	url = https://github.com/JacobJustice/SneakerDataVisualization.git
+[submodule "Data-Cleaning"]
+	path = Data-Cleaning
+	url = https://github.com/JacobJustice/Data-Cleaning.git

@@ -1,3 +1,15 @@
+import sys
+import argparse
+
+parser = argparse.ArgumentParser(description='Predict the price of Sneakers')
+group = parser.add_mutually_exclusive_group(required=True)
+
+group.add_argument('--webpage', help='URL from www.stockx.com of the sneaker you want to make a prediction of')
+group.add_argument('--csv', help='The .csv containing the data you want to visualize')
+parser.add_argument('--keras', help='Directory to keras model used to make the prediction',default='./SneakerPricePrediction/autokeras_out/')
+
+args = parser.parse_args(sys.argv[1:])
+
 from PIL import Image
 from SneakerPricePrediction.predict import normalize_pixels
 from SneakerPricePrediction.predict import load_df
@@ -6,8 +18,6 @@ from DataCleaning.autocrop import crop_image
 from DataCleaning.flatten_images import generate_rgb_row
 from pprint import pprint
 import pandas as pd
-import argparse
-import sys
 import numpy as np
 import autokeras as ak
 from tensorflow import keras
@@ -48,14 +58,6 @@ def one_hot_encoder(df):
 
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
-parser = argparse.ArgumentParser(description='Predict the price of Sneakers')
-group = parser.add_mutually_exclusive_group(required=True)
-
-group.add_argument('--webpage', help='URL from www.stockx.com of the sneaker you want to make a prediction of')
-group.add_argument('--csv', help='The .csv containing the data you want to visualize')
-parser.add_argument('--keras', help='Directory to keras model used to make the prediction',default='./SneakerPricePrediction/autokeras_out/')
-
-args = parser.parse_args(sys.argv[1:])
 
 # load model
 model = keras.models.load_model("./SneakerPricePrediction/autokeras_out/", custom_objects=ak.CUSTOM_OBJECTS)

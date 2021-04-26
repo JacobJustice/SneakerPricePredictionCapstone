@@ -1,12 +1,12 @@
 [submodule "SneakerPricePrediction"]
 	path = SneakerPricePrediction
 	url = https://github.com/JacobJustice/SneakerPricePrediction.git
-[submodule "StockX-Scraper"]
-	path = StockX-Scraper
+[submodule "StockXScraper"]
+	path = StockXScraper
 	url = https://github.com/JacobJustice/StockX-Scraper.git
 [submodule "SneakerDataVisualization"]
 	path = SneakerDataVisualization
 	url = https://github.com/JacobJustice/SneakerDataVisualization.git
-[submodule "Data-Cleaning"]
-	path = Data-Cleaning
+[submodule "DataCleaning"]
+	path = DataCleaning
 	url = https://github.com/JacobJustice/Data-Cleaning.git

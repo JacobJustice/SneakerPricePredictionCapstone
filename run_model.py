@@ -64,9 +64,7 @@ model = keras.models.load_model("./SneakerPricePrediction/autokeras_out/", custo
 print('\n\n')
 
 
-print(args)
 shoe_data = {}
-
 # check for webpage
 if args.webpage != None:
     print(args.webpage)
